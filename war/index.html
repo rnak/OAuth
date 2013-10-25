@@ -1,0 +1,86 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Login with google</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		h1{
+			color:green;
+			text-align:center;
+			font-family:Vardana;
+			
+		
+		}
+	</style>
+  </head>
+
+  <body> 
+  <div>
+    <h1>Login with google</h1>
+  </div>
+	<div class="well">
+		<form action="/Auth2" method="GET">
+		<!-- <form action="/autho" method="GET"> -->
+					<div>
+						<input type="submit" class="btn btn-primary" name="go" value=" Google">
+					</div>
+					
+		</form>
+		
+		<form action="/face2" method="GET">
+		<!-- <form action="/autho" method="GET"> -->
+					<div>
+						<input type="submit" class="btn btn-primary" name="go" value=" facebook">
+					</div>
+					
+		</form>
+		<form action="/autho" method="GET">
+		
+					<div>
+						<input type="submit" class="btn btn-primary" name="go" value="token gen login">
+					</div>
+					
+		</form>
+					<div><a class="btn btn-info" href="#register" role="button" 
+					data-target="#register" data-toggle="modal">Register</a></div>				
+			
+	</div>
+	<div id="register" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="model" aria-hidden="true"><i class="icon-remove"></i></button>
+    <h3 id="myModalLabel">Register</h3>
+  </div>
+  <div class="modal-body">
+    
+				<form METHOD=GET ACTION="/FirstAppServlet">
+					<div class="controls controls-row">
+						<input type="text" class="span3" class="input-block-level"placeholder="User Name" name="username">
+						<input type="password" class="span2" class="input-block-level"placeholder="Password" name="password">pass
+						
+						
+					</div>
+					<div>
+					<input type="email" class="span5"placeholder="E_mail address" name="email">
+					</div>
+					
+				<button class="btn btn-success" >register</button>
+				</form>
+  </div>
+  <div class="modal-footer">
+    				
+  </div>
+</div>
+    
+  </body>
+</html>    
+               

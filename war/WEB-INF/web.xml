@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>redirect</servlet-name>
+		<servlet-class>deal.PlusBasicServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>redirect</servlet-name>
+		<url-pattern>/PlusBasicServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>authocontact</servlet-name>
+		<servlet-class>deal.authocontact</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>authocontact</servlet-name>
+		<url-pattern>/authocontact</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminRegister</servlet-name>
+		<servlet-class>deal.AdminRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminRegister</servlet-name>
+		<url-pattern>/AdminRegister</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>gcookiedel</servlet-name>
+		<servlet-class>deal.gcookiedel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>gcookiedel</servlet-name>
+		<url-pattern>/gcookiedel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>fcookiedel</servlet-name>
+		<servlet-class>deal.fcookiedel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fcookiedel</servlet-name>
+		<url-pattern>/fcookiedel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>face2</servlet-name>
+		<servlet-class>deal.face2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>face2</servlet-name>
+		<url-pattern>/face2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>faceauth</servlet-name>
+		<servlet-class>deal.faceauth</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>faceauth</servlet-name>
+		<url-pattern>/faceauth</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>authorized</servlet-name>
+		<servlet-class>deal.Authorized</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>authorized</servlet-name>
+		<url-pattern>/autho</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>deal.logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Auth2</servlet-name>
+		<servlet-class>deal.Auth2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Auth2</servlet-name>
+		<url-pattern>/Auth2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FirstAppServlet</servlet-name>
+		<servlet-class>deal.FirstAppServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FirstAppServlet</servlet-name>
+		<url-pattern>/FirstAppServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
